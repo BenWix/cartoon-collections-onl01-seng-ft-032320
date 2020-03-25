@@ -5,11 +5,8 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(summons)
-  summons.map!{|word| 
-    word[0] = word[0].upcase;
-    word +="!"
-  }
-  summons
+  summons.map{|word| word = word.capitalize + "!"}
+  
 end
 
 def long_planeteer_calls# code an argument here
