@@ -5,9 +5,9 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(summons)
-  summons.map{|word| 
+  summons.map!{|word| 
     word[0] = word[0].upcase;
-    word+="!"
+    word +="!"
   }
   summons
 end
