@@ -8,7 +8,7 @@ def summon_captain_planet(summons)
   summons.map{|word| 
     word[0] = word[0].upcase
     word+="!"
-  end 
+  }
   summons
 end
 
